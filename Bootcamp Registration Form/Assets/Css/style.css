@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+
+    --main-color: #0C7FAE;
+    --praimary-color:#ffbe55;
+    --secondary-color: #2a94f4;
+    --add-on-color: #C0BFC4;
+}
+
+
+body{
+    background-color: var(--main-color);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+::placeholder
+
+.input :is(:focus){
+    border-bottom-color: var(--praimary-color);   
+}
+
+.reg-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.wrapper .illustration-holder{
+    width: 50%;
+}
+
+.wrapper .form-holder{
+     width: 50%;
+}
+
+.wrapper{
+    background-color: var(--add-on-color);
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 5px 10px rgb(0, 0, 0,4);
+
+    border-radius: 5px;
+}
+
+.form-holder .main-heading{
+
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.form-holder .sub-heading{
+
+    font-weight: 600px;
+    font-size: 15px;
+
+    padding-bottom: 20px;
+}
+
+.form-holder .sub-heailight{
+
+    font-weight: bold;
+}
+
+.form-control{
+
+    background-color: var(--add-on-color);
+    color: var(--main-color);
+
+    border: none;
+    border-bottom: 2px solid var(--main-color);
+
+    margin-bottom: 20px;
+
+    outline: none;
+}
+
+.wrapper .instruction{
+
+    font-size: 13px;
+    
+    margin-bottom: 20px;
+}
+
+button{
+    background-color: var(--praimary-color);
+
+    border: none;
+
+    width: 20%;
+    height: 20px;
+
+    margin-bottom: 5px;
+}
+
+.form-holder button:hover{
+
+    background-color: var(--secondary-color);
+    color: var(--add-on-color);
+}
+
+.copyright{
+
+    font-size: small;
+
+    margin-bottom: 10px;
+}
+
